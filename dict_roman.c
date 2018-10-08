@@ -41,13 +41,13 @@ dinit_roman(PG_FUNCTION_ARGS) {
  	PG_RETURN_POINTER(d);
 }
 
-static unsigned char *tokens[] = {"M",  "CM", "D", "CD", "CCC", "CC", "C", "XC", "L", "XL", "XXX", "XX", "X", "IX", "V", "IV", "III", "II", "I"};
+static char *tokens[] = {"M",  "CM", "D", "CD", "CCC", "CC", "C", "XC", "L", "XL", "XXX", "XX", "X", "IX", "V", "IV", "III", "II", "I"};
 static int values[] = {1000, 900, 500, 400, 300, 200, 100, 90, 50, 40, 30, 20, 10, 9, 5, 4, 3, 2, 1}; 
 static int ntokens = 19;
 
-static unsigned int roman_to_arabic(unsigned char *string)
+static unsigned int roman_to_arabic( char *string)
 {
-        unsigned char *pos = string;
+        char *pos = string;
         unsigned int result = 0;
         unsigned int prev_value = 0;
     
