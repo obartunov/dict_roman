@@ -1,0 +1,15 @@
+dict_roman  dictionary converts roman numerals to arabic.
+
+USAGE:
+
+SELECT ts_lexize('roman','XXIV');
+ ts_lexize
+-----------
+ {24}
+(1 row)
+
+SELECT ts_lexize('roman','XLII');
+ ts_lexize
+-----------
+ {42}
+(1 row)

@@ -18,4 +18,4 @@ CREATE TEXT SEARCH DICTIONARY roman (
            TEMPLATE = roman_template
 );
 
-COMMENT ON TEXT SEARCH DICTIONARY roman IS 'Dictionary for roman dates';
+COMMENT ON TEXT SEARCH DICTIONARY roman IS 'Dictionary for roman numerals';

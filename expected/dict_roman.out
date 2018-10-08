@@ -1,8 +1,14 @@
 CREATE EXTENSION dict_roman;
 --lexize
 SELECT ts_lexize('roman','X');
- ts_lexize
+ ts_lexize 
 -----------
  {10}
+(1 row)
+
+SELECT ts_lexize('roman','123');
+ ts_lexize 
+-----------
+ 
 (1 row)
 

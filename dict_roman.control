@@ -1,5 +1,5 @@
 # dict_roman extension
-comment = 'Dictionary for roman dates'
+comment = 'Dictionary for roman numerals'
 default_version = '1.0'
 module_pathname = '$libdir/dict_roman'
 relocatable = true
